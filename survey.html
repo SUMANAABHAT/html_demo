@@ -10,6 +10,7 @@
     <!--Heading section-->
     <h1>EMPLOYEE INTERESTS SURVEY FORM</h1>
     <fieldset>
+        <form>
         <legend>Personal Information</legend>
         <br>
         <label for="uname">Enter Your Name:</label>
@@ -19,7 +20,50 @@
         <td><input type="text" id="udepartment" name="udepartment"</td>
         <br><br>
         <label for="yourself">Enter a little about yourself:</label>
-        <td><textarea></textarea>
+        <td><textarea rows="9" cols="70"></textarea>
+            <br><br>
+            <label for="exercise">Do you exercise at home?"</label>
+            <div>
+
+
+            <td><input type="radio" id="type1" name="mtype" value ="Yes"></td>
+                <td><label for"type1"> Yes</label></td>
+                <td><input type="radio" id="type2" name="mtype" value ="No"></td>
+                <td><label for"type2"> No</label></td> <br><br> 
+                <label for="read">How do you like to read about favorite topics?</label>
+                <td><input type="checkbox" id="type1" name="mtype" value ="books"></td>
+                <td><label for"type1">Books</label></td>
+                <td><input type="checkbox" id="type1" name="mtype" value ="Online Resources"></td>
+                <td><label for"type1">Online Resources</label></td>
+                <td><input type="checkbox" id="type2" name="mtype" value ="Phone Apps></td>
+                <td><label for"type2">Phone Apps</label></td>
+                <td><input type="checkbox" id="type2" name="mtype" value ="Magazines"></td>
+                <td><label for"type2">Magazines</label></td> <br><br>
+                <label for="movies">What Genre of Movies do You Like?</label>
+                <td>
+                    <select id="movie" name="movie select">
+                        <option></option>
+                        <option value="Tragedy">Tragedy</option>
+                        <option value="Suspense">Suspense</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Comedy">Comedy</option>
+                    </select>
+                </td>
+            </div> 
+        
+        <br><br>
+        
+           <div class="controls">
+
+               
+               <input type="submit" value="Submit">
+               <input type="reset">
+
+            </div>
+        
+          </form>
 
 
 
