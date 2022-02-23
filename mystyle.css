@@ -8,15 +8,17 @@ h1{
     }
 fieldset {
         background-color:rgb(228, 212, 215)}
-        legend {background-color: powderblue;
+        legend {
+            background-color: powderblue;
             color: rgb(77, 116, 116);
-            text-align:center;
+            text-align: center;
             padding: 5px 10px;
             font-family: Verdana;
                  font-size: 20px;
+        }
           
              margin:5px;
              legend {
                  color: tomato;/*set text color to tomato */
              }
-              #mtype{accent-color: rgb(121, 121, 64)}
+              #type1{accent-color: rgb(121, 121, 64)}

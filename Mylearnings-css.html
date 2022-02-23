@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/4666fe5bd9.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+<style>
+    body {
+        background-color: lavender;
+        background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+    }
+    div.round {
+        border:2px solid rgb(94, 168, 94);
+        border-radius: 2px;
+        padding: 5px;
+    }
+    h1 {color: rgb(97, 89, 78);
+    text-align: center;
+     background-color: rgb(169, 231, 197);}
+
+    legend {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        font-size: 20px;
+    }
+    div {
+        background-color: rgb(81, 176, 214);
+    }
+    div.first {
+        opacity: 0.5;
+        }
+        div.second {
+            opacity:0.7;
+        }
+        div.three {
+            opacity: 0.9;
+            text-align:center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: auto;
+        }
+        div.four {
+            font-family: cursive;
+            font-size: 200%;           
+        }
+          label.container:hover {
+            color: #ad1b1b;
+              font-size: 22px;}
+    p {
+
+        background-color: rgb(197, 197, 137);
+        color: rgb(99, 45, 26); /*set text color to red */
+        font-style: oblique;
+        font-size: large;
+        font-weight: 100;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+</style>
+</head>
+<body>
+    
+    <h1>Employee interests survey form</h1>
+    <i class="fas fa-cloud" style="font-size:48px;color:red;"></i> <br><br>
+  </div>
+    <fieldset>
+        <legend>Personal Information</legend><br>
+        <div class="first">
+            <p for="date">Date:</p>
+           <td><input type="date"></td>
+            <p for="email">Email:</p>
+            <td><input type="email"</td>
+        </div>
+           <div class="second">
+              <p for="uname">Enter Your Name:</p>
+                <td><input type="text" id="uname" name="uname"</td>
+              <p for="udepartment">Enter Your Department :</p>
+              <td><input type="text" id="udepartment" name="udepartment"</td>   
+            </div>
+        </div>
+        <br>
+        <div>
+            <div class="three">
+            <label for="yourself">Enter a little about yourself:</label>
+            <td><textarea rows="9" cols="70"></textarea>
+                <i class="fa-solid fa-spray-can-sparkles"></i></i>
+            <br><br>
+        </div>
+        <br>
+        <div>
+            <div class="four">
+                <label class="container"></label>
+
+             <label for="exercise">Do you exercise at home?</label>
+             <br><br>
+                <label class="container">yes!!!
+                    <input type="radio" checked="checked" name="radio">
+                  </label>
+                  <label class="container">Not Regularly...
+                    <input type="radio" name="radio">
+                  </label>
+                  <label class="container">Weekends Only @@
+                    <input type="radio" name="radio">
+                  </label>
+                  <label class="container">No!!Never!!!
+                    <input type="radio" name="radio">
+                  </label> <br><br>
+
+            </div>
+        <div>
+
+        </div>
+    </fieldset>
+    
+</body>
+</html>
