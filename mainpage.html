@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>my first webpage</title> 
+    <style>
+        div {
+            text-align: center;
+            padding: 20px;
+            border: 5px orangered double;
+            box-sizing:border-box;
+        }
+        iframe {
+            display: inline;
+            border: 2px orangered dotted;
+            overflow: auto;
+        }
+        h1 {
+            text-align: center;
+            background-color: aquamarine;
+            font-size: 50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;         
+        }
+    </style>   
+</head>
+<body>
+    <h1>These are iframe content</h1>
+    <div>
+
+        <iframe src="http://127.0.0.1:3000/mycode/iframepage1.html"width="510" height="630">
+        </iframe>&nbsp;&nbsp;
+        <iframe src="http://127.0.0.1:3000/mycode/iframepage2.html"width="420" height="730">
+               </iframe>&nbsp;&nbsp;
+        <iframe src="http://127.0.0.1:3000/mycode/iframepage3.html"width="420" height="450">
+        </iframe>
+    </div>
+</body>
+</html>

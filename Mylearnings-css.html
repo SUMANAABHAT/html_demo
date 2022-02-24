@@ -12,7 +12,7 @@
 <style>
     body {
         background-color: lavender;
-        background-image: url("img_tree.png");
+        background-image: url("img_tree.gif");
   background-repeat: no-repeat;
   background-position: right top;
   margin-right: 200px;
@@ -53,6 +53,12 @@
           label.container:hover {
             color: #ad1b1b;
               font-size: 22px;}
+              #rad1:hover {
+                accent-color: #ad1b1b;
+              transform:scale(2);}
+              
+              
+
     p {
 
         background-color: rgb(197, 197, 137);
@@ -68,7 +74,7 @@
 <body>
     
     <h1>Employee interests survey form</h1>
-    <i class="fas fa-cloud" style="font-size:48px;color:red;"></i> <br><br>
+    <i class="fas fa-cloud" style="font-size:48px;color:red;margin-left: 700px;"></i> <br><br>
   </div>
     <fieldset>
         <legend>Personal Information</legend><br>
@@ -100,17 +106,18 @@
 
              <label for="exercise">Do you exercise at home?</label>
              <br><br>
+
                 <label class="container">yes!!!
-                    <input type="radio" checked="checked" name="radio">
+                    <input type="radio" id="rad1" checked="checked" name="radio">
                   </label>
                   <label class="container">Not Regularly...
-                    <input type="radio" name="radio">
+                    <input type="radio" id="rad1" checked="checked" name="radio">
                   </label>
                   <label class="container">Weekends Only @@
-                    <input type="radio" name="radio">
+                    <input type="radio"id="rad1" checked="checked" name="radio">
                   </label>
                   <label class="container">No!!Never!!!
-                    <input type="radio" name="radio">
+                    <input type="radio"id="rad1" checked="checked" name="radio">
                   </label> <br><br>
 
             </div>
