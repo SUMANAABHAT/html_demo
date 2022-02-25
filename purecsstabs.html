@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pure css tabs</title>
+        <style>
+            body {
+                margin: 100px;
+            }
+            div {
+                text-align: center;
+                padding: 20px;
+                border: 5px goldenrod double;
+            }
+            .tabs {
+                display: flex;
+                flex-wrap: wrap;
+                width: 560px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: rgb(222, 240, 234);
+            }
+            .tabs__label {
+                box-sizing: 30px;
+                padding: 10px 16px;
+                cursor: pointer;
+            }
+             input {
+             display: none;
+
+            }
+            #fashion: checked{
+                display:
+
+             }
+             input + label {
+                 display:inline-block;
+             }
+            
+            .tabs__radio {
+               /* display: none;*/
+            }
+            .tabs__content {
+                order: 1;
+                width: 100%;
+                height: 100%;
+                border: 3px solid #f7e6e6;
+                background-color: darkgrey;
+                line-height: 2px;
+                font-size: 0.9em;
+                display: none;
+            }
+            .tabs__radio:checked+.tabs__label {
+                font-weight: bold;
+                color:#05473a;
+                border-radius: 2px solid #05473a;
+            }
+            .tabs__radio:checked+.tabs__label+.tabs__content {
+                display: initial;
+            }            
+        </style>    
+</head>
+<body>
+    <div class="tabs">
+        <input type="radio" class="tabs__radio" name="tabs-example" id="Business" checked>
+        <label for="tab1" class="tabs__label">Business</label>
+        <div class="tabs__content">
+            CONTENT FOR BUSINESS
+        </div>
+            <input type="radio" class="tabs__radio" name="tabs-example" id="Fashion">
+            <label for="tab1" class="tabs__label">Fashion</label>
+            <div class="tabs__content">
+                CONTENT FOR FASHION
+            </div>
+                <input type="radio" class="tabs__radio" name="tabs-example" id="World News">
+                <label for="tab1" class="tabs__label">World News</label>
+                <div class="tabs__content">
+                    CONTENT FOR WORLD NEWS
+                </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="Story Of The day">
+                    <label for="tab1" class="tabs__label">Story Of The Day</label>
+                    <div class="tabs__content">
+                        CONTENT FOR STORY FO THE DAY     
+                    </div>    
+    </div>   
+    
+
+
+    
+</body>
+</html>
