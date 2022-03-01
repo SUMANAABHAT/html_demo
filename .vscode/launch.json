@@ -11,6 +11,13 @@
             "type": "pwa-chrome",
             "webRoot": "${workspaceFolder}"
         },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-chrome",
+            "webRoot": "${workspaceFolder}"
+        },
         
         {
             "name": "Attach to Edge",
