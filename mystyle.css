@@ -1,24 +1,8 @@
 
-h1{
-    color:tomato;
-    text-align:center;
-    text-transform: capitalize;
-    
-        text-shadow: 2px 2px 5px rgb(235, 153, 153);
-    }
-fieldset {
-        background-color:rgb(228, 212, 215)}
-        legend {
-            background-color: powderblue;
-            color: rgb(77, 116, 116);
-            text-align: center;
-            padding: 5px 10px;
-            font-family: Verdana;
-                 font-size: 20px;
-        }
-          
-             margin:5px;
-             legend {
-                 color: tomato;/*set text color to tomato */
-             }
-              #type1{accent-color: rgb(121, 121, 64)}
+
+
+.container {
+    max-width: 400px;
+    margin:10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
