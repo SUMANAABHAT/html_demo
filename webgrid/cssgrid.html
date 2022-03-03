@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+
+        * {...}
+        @font-face {...} body {
+            background: ;
+        }
+        .title {...}
+        .title span {...}
+        .item:hover {...}
+
+
+        #container {
+            width:90vw;
+            height: 70vh;
+            margin: auto;
+            background-color: whitesmoke;
+            outline: 8px solid #c0bae5;
+            display: grid;
+        
+          grid-auto-flow: row;
+            column-gap: 10px;
+            row-gap: 10px;
+            align-items: center;
+            justify-items: stretch;
+            place-items: stretch;
+
+            grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end];
+            grid-auto-rows: 60px auto 100px;
+            grid-template-areas:
+            "header header header"
+            "main1 main2 sidebar"
+            "footer footer sidebar";  
+           }
+
+           .header {
+               grid-area: header;
+               text-align: center;
+           }
+           .main1 {
+               grid-area: main1;
+               text-align: center;
+               
+           }
+           .main2 {
+               grid-area: main2;
+               text-align: center;
+           }
+           .sidebar {
+               grid-area: sidebar;
+               text-align: center;
+           }
+           .footer {
+               grid-area: footer;
+               text-align: center;
+           }
+
+           
+    </style>
+</head>
+<body>
+    <h1 class="title"><span>The Grid Page</span><br>CSS Grid</h1>
+    <div id="container">
+        
+
+        <div class="item header"
+        style="background-color:rgb(212, 245, 212);" >header</div>
+
+        <div class="item main1"
+        style="background-color: rgb(248, 248, 197);">main1</div>
+
+        <div class="item main2"
+        style="background-color:rgb(233, 163, 163)">main2</div>
+        
+        <div class="item sidebar"
+        style="background-color:rgb(224, 224, 247)">sidebar</div>
+
+        <div class="item footer"
+        style="background-color: rgb(250, 216, 153)">footer</div>
+    </div>
+
+</body>
+</html>
