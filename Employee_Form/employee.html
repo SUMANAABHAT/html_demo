@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <!--html form for employees-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+                    <div>
+                        <label>Full Name* :</label><label class="validation-error hide" id="fullNameValidationError">This is a required field</label><br>
+                        <input type ="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Employee Id :</label><br>
+                        <input type ="text" name="employeeId" id="employeeId">
+                    </div>
+                    <div>
+                        <label>Joining Date :</label><br>
+                        <input type ="date" name="joiningDate" id="joiningDate">
+                    </div>
+                    <div>
+                        <label>Hours Worked :</label><br>
+                        <input type ="text" name="workedHours" id="workedHours">
+                    </div>
+                    <div>
+                        <label>Designation :</label><br>
+                        <input type ="text" name="designation" id="designation">
+                    </div>
+                    <div>
+                        <label>Salary :</label><br>
+                        <input type ="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>City :</label><br>
+                        <input type ="text" name="cityName" id="city">
+                    </div>
+                    <div class="form-action-buttons"><br>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <!--table to list all records-->
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Employee Id</th>
+                            <th>Joining Date</th>
+                            <th>Hours Worked</th>
+                            <th>Designation</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+    <script src="employee.js"></script>
+</body>
+</html>

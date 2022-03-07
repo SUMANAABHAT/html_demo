@@ -10,7 +10,9 @@ let message3 = document.getElementById("message3");
         let user_guess= document.getElementById("guess").
         value;
         if(user_guess < 1 || user_guess >20){
-            alert("Please Enter A Number Between 1 and 20");            
+            alert("Please Enter A Number Between 1 and 20"); 
+            document.getElementById("guess").
+            value = "";          
         }
         else {
             guessed_numbers.push(user_guess);
@@ -20,11 +22,15 @@ let message3 = document.getElementById("message3");
                 message1.textContent =" Your Guess is Too Low!";
                 message2.textContent = "No. of Guesses :" + no_of_guesses;
                 message3.textContent ="Guessed Numbers Are :" + guessed_numbers;
+                document.getElementById("guess").
+            value = ""; 
             }
             else if(user_guess >guessedNumber){
                 message1.textContent =" Your Guess is Too high!";
                 message2.textContent = "No. of Guesses :" + no_of_guesses;
-                message3.textContent ="Guessed Numbers Are :" + guessed_numbers;   
+                message3.textContent ="Guessed Numbers Are :" + guessed_numbers;
+                document.getElementById("guess").
+            value = "";    
             }
 
             else if (user_guess == guessedNumber){
